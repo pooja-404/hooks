@@ -8,12 +8,12 @@ function DarkModeToggle() {
     };
 
     return (
-        <div className='box container border-radius2 mt-5'>
+        <div className='box container bg-yellow border-radius2 my-5'>
             <div className={isDarkMode ? "dark-mode" : ""}>
-                <div className=''>
+                <div className='p-4'>
                     <h2>Toggle Dark/Light Mode</h2>
                     <p>Click the button to toggle between dark and light mode for this box.</p>
-                    <button onClick={toggleDarkMode} className='togal-btn'>Toggle dark mode</button>
+                    <button onClick={toggleDarkMode} className='border-radius bg-pink border-0 p-3 '>Toggle dark mode</button>
                 </div>
             </div>
         </div>

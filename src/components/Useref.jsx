@@ -49,15 +49,15 @@ function Useref() {
             <h2 className="fs-60 fw-bold text-blue text-center ">Useref</h2>
             <div className='d-flex justify-content-center'>
                 <input
-                    className='text-center border-radius '
+                    className='text-center border-radius text-black '
                     type="text"
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     placeholder="Enter a somthing" 
                 />
-                <button onClick={handleAddTodo} className='fw-medium border-radius'>Add</button>
+                <button onClick={handleAddTodo} className='fw-medium border-radius bg-pink'>Add</button>
             </div>
-            <h1 className='text-center'>Todo List</h1>
+            <h1 className='text-center pt-2'>Todo List</h1>
             <ul className='text-center'>
                 {todos.map((todo, index) => (
                     <p className='text-decoration-none mb-0 fw-medium' key={index}>{todo}</p>
